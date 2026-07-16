@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.field label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate);
+}
+
+.form input[type="text"],
+.form select {
+  padding: 1.2rem 1.4rem;
+  background: var(--surface);
+  border: 0.1rem solid var(--border);
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.form input[type="text"]:focus,
+.form select:focus {
+  border-color: var(--accent);
+}
+
+.form input[type="text"]::placeholder {
+  color: var(--slate);
+  opacity: 0.5;
+}
+
+.form select {
+  cursor: pointer;
+}
+
+.form select option {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.submit {
+  background: var(--accent);
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  padding: 1.4rem;
+  border-radius: var(--radius);
+  transition: opacity 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.submit:hover {
+  opacity: 0.85;
+}

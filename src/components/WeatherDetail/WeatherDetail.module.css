@@ -1,0 +1,60 @@
+.card {
+  background: var(--surface);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 40rem;
+  box-shadow: var(--shadow);
+}
+
+.cityRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.cityName {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.temperature {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 1rem 0 2rem;
+  letter-spacing: -0.03em;
+}
+
+.temperatures {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+}
+
+.temperatures p {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tempLabel {
+  color: var(--slate);
+  font-weight: 400;
+}
+
+.tempValue {
+  font-weight: 700;
+}

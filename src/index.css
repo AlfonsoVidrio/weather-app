@@ -1,18 +1,73 @@
 :root {
-  --white: #FFF;
-  --primary: #F59E0B;
+  --radius: 1.2rem;
+}
+
+:root,
+:root.light {
+  --bg: #F8F9FB;
+  --surface: #FFFFFF;
+  --text: #1B2D45;
+  --secondary: #3D5A7A;
+  --slate: #4A6A8A;
+  --border: #D6DFEA;
+  --accent: #6B8DB8;
+  --shadow: 0 0.2rem 0.8rem rgba(27, 45, 69, 0.08);
+}
+
+:root.dark {
+  --bg: #101B2B;
+  --surface: #1B2D45;
+  --text: #F1F5F9;
+  --secondary: #8DA9C9;
+  --slate: #7A9AB8;
+  --border: #2A4060;
+  --accent: #8DA9C9;
+  --shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Outfit", sans-serif;
-  height: 100vh;
-  /* background-size: cover;
-  background-repeat: no-repeat; */
-  height: 100vh;
-  color: var(--white);
+  font-weight: 300;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
   font-size: 2rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,0 +1,10 @@
+.alert {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: var(--surface);
+  border: 0.1rem solid var(--border);
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--secondary);
+}

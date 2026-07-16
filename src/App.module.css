@@ -1,0 +1,96 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+}
+
+.themeToggle {
+  width: 4.8rem;
+  height: 2.6rem;
+  border-radius: 999px;
+  border: 0.1rem solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+  transition: border-color 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.themeToggle:hover {
+  border-color: var(--accent);
+}
+
+.thumb {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--slate);
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  transition: transform 0.25s ease, background 0.2s ease;
+}
+
+.thumbDark {
+  transform: translateX(2.2rem);
+  background: var(--accent);
+}
+
+.header {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  color: var(--secondary);
+}
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+}
+
+@media (min-width: 768px) {
+  .app {
+    padding: 4rem;
+  }
+
+  .themeToggle {
+    top: 4rem;
+    right: 4rem;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+    margin-top: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 4rem;
+  }
+}

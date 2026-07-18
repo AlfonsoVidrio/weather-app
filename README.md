@@ -2,8 +2,7 @@
 
 A web application to check the current weather for any city using the OpenWeatherMap API, built with React and TypeScript.
 
-<img width="1920" height="911" alt="screencapture" src="https://github.com/user-attachments/assets/c61a48be-0be8-4aca-96ad-41c9aa28a610" />
-
+<img width="1920" height="911" alt="screencapture" src="https://github.com/user-attachments/assets/d4789126-0c0f-4b56-afc2-06c48fae9461" />
 
 ## Features
 
